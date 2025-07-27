@@ -44,5 +44,10 @@ form.addEventListener('submit', function (e) {
         confirmPassword.classList.add('error');
         valid = false;
     }
-
+    if (valid) {
+        if (valid) {
+            const usernameValue = username.value;
+            window.location.href = `thankyou.html?name=${encodeURIComponent(usernameValue)}`;
+        }
+    }
 });
