@@ -39,5 +39,10 @@ form.addEventListener('submit', function (e) {
         password.classList.add('error');
         valid = false;
     }
+    if (confirmPassword.value !== password.value) {
+        confirmPasswordError.textContent = 'Passwords do not match';
+        confirmPassword.classList.add('error');
+        valid = false;
+    }
 
 });
