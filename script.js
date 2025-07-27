@@ -25,4 +25,13 @@ form.addEventListener('submit', function (e) {
         username.classList.add('error');
         valid = false;
     }
+    if (email.value.trim() === '') {
+        emailError.textContent = 'Email is required';
+        email.classList.add('error');
+        valid = false;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+        emailError.textContent = 'Email is invalid';
+        email.classList.add('error');
+        valid = false;
+    }
 });
