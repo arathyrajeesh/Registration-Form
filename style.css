@@ -95,3 +95,43 @@ button:hover {
 input.error {
     border: 2px solid red;
 }
+body {
+    background: #f8f9fd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.thank-you-box {
+    background-color: #eef7ff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-box h1 {
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.thank-you-box strong {
+    color: green;
+}
+
+.thank-you-box button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.thank-you-box button:hover {
+    opacity: 0.9;
+}

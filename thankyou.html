@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You</title>
+</head>
+<body>
+    <div class="thank-you-box">
+        <h1>Thanks <strong id="userName">User</strong> for Your <br> Registration.</h1>
+        <button onclick="history.back()">Preview Form</button>
+    </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
+        if (name) {
+            document.getElementById('userName').textContent = name;
+        }
+    </script>
+    
+</body>
+</html>
