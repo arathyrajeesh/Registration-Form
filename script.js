@@ -11,3 +11,18 @@ const confirmPasswordError = document.getElementById('confirmPasswordError');
 
 const successMsg = document.getElementById('successMsg');
 const preview = document.getElementById('preview');
+
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    let valid = true;
+
+    [usernameError, emailError, passwordError, confirmPasswordError].forEach(el => el.textContent = '');
+    [username, email, password, confirmPassword].forEach(input => input.classList.remove('error'));
+
+    if (username.value.trim() === '') {
+        usernameError.textContent = 'Username is required';
+        username.classList.add('error');
+        valid = false;
+    }
+});
