@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <section class="form-section">
+        <div class="form-container">
+            <form id="myForm" action="#" method="post" novalidate>
+                <h1>REGISTRATION FORM</h1>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your name" />
+                <span class="error-message" id="usernameError"></span>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter your email" />
+                <span class="error-message" id="emailError"></span>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" />
+                <span class="error-message" id="passwordError"></span>
+
+                <label for="confirmPassword">Retype Password</label>
+                <input type="password" id="confirmPassword" placeholder="Enter password again" />
+                <span class="error-message" id="confirmPasswordError"></span>
+
+                <button type="submit">SUBMIT</button>
+
+            </form>
+        </div>
+    </section>
+</body>
+</html>
