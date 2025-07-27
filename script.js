@@ -34,4 +34,10 @@ form.addEventListener('submit', function (e) {
         email.classList.add('error');
         valid = false;
     }
+    if (password.value.length < 6) {
+        passwordError.textContent = 'Password must be at least 6 characters';
+        password.classList.add('error');
+        valid = false;
+    }
+
 });
